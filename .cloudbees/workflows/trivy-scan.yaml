@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   trivy-scan:
+    steps:
       - name: Scan with Trivy
         uses: cloudbees-io/trivy-plugin@v1
         with:

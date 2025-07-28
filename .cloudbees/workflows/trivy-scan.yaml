@@ -1,0 +1,17 @@
+name: trivy-scan
+kind: workflow
+apiVersion: automation.cloudbees.io/v1alpha1
+
+on:
+  workflow_dispatch:
+permissions:
+  scm-token-own: read
+  scm-token-org: read
+  id-token: write
+
+jobs:
+  trivy-scan:
+      - name: Scan with Trivy
+        uses: cloudbees-io/trivy-plugin@v1
+        with:
+          binary-tar-path: /trivy-nginx/nginx.tar

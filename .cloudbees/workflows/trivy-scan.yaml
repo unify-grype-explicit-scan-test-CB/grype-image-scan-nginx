@@ -11,7 +11,9 @@ permissions:
 
 jobs:
   trivy-scan:
-    steps:
+    steps:      
+      - name: checkout Source Code
+        uses: cloudbees-io/checkout@v1
       - name: Scan with Trivy
         uses: cloudbees-io/trivy-plugin@v1
         with:

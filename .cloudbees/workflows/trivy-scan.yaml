@@ -14,7 +14,8 @@ jobs:
     steps:      
       - name: checkout Source Code
         uses: cloudbees-io/checkout@v1
+
       - name: Scan with Trivy
-        uses: cloudbees-io/trivy-plugin@v1
+        uses: cloudbees-io/trivy-plugin@v2
         with:
           binary-tar-path: /trivy-nginx/nginx.tar

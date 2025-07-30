@@ -1,1 +1,1 @@
-# trivy-docker-image-scan
+# trivy-docker-publicimage-scan

@@ -1,4 +1,4 @@
-name: trivy-scan
+name: trivy--explicit-scan
 kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 

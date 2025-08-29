@@ -9,7 +9,7 @@ on:
       - 'main'
   schedule:
     - cron: 30 3 * * 2
-    - cron: 30 3 * * 5
+    - cron: 30 3 * * 4
 permissions:
   scm-token-own: read
   scm-token-org: read
